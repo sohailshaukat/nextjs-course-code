@@ -13,7 +13,7 @@ function ClientsPage() {
           <li key={client.id}>
             <Link
               href={{
-                pathname: "/client/[id]",
+                pathname: "/clients/[id]",
                 query: { id: client.id },
               }}
             >
