@@ -4,7 +4,7 @@ async function handler(req, res) {
   const eventId = req.query.eventId;
 
   const client = await MongoClient.connect(
-    "mongodb+srv://admin-baba:Test123@cluster0.oosms.mongodb.net/events?retryWrites=true&w=majority"
+    "mongodb+srv://admin-baba:<password>@cluster0.oosms.mongodb.net/events?retryWrites=true&w=majority"
   );
 
   if (req.method === "POST") {
